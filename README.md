@@ -1,6 +1,6 @@
 # 👋 Hello, World!
 
-Este é o repositório do meu site pessoal - um espaço onde compartilho um pouco sobre mim, meus projetos e (em breve) algumas reflexões no blog.
+Este é o repositório do meu site pessoal - um espaço onde compartilho um pouco sobre mim, meus projetos e algumas reflexões no Medium.
 
 ## ✨ Sobre o site
 
