@@ -1,0 +1,26 @@
+---
+import { languages } from '../i18n/ui';
+
+const { pathname } = Astro.url;
+const currentLang = pathname.startsWith('/en') ? 'en' : 'pt-br';
+---
+
+<div class="flex items-center space-x-2">
+  {Object.entries(languages).map(([lang, label]) => {
+    const isCurrent = lang === currentLang;
+    const href = lang === 'pt-br' ? '/' : `/${lang}`;
+    
+    return (
+      <a
+        href={href}
+        class:list={[
+          "text-sm font-medium transition-colors hover:text-tokyo-blue",
+          isCurrent ? "text-tokyo-blue" : "text-tokyo-comment"
+        ]}
+        aria-label={`Change language to ${label}`}
+      >
+        {lang.toUpperCase()}
+      </a>
+    );
+  })}
+</div>

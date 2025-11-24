@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    --color-tokyo-bg: #1a1b26;
+    --color-tokyo-fg: #a9b1d6;
+    --color-tokyo-blue: #7aa2f7;
+    --color-tokyo-cyan: #7dcfff;
+    --color-tokyo-purple: #bb9af7;
+    --color-tokyo-green: #9ece6a;
+    --color-tokyo-yellow: #e0af68;
+    --color-tokyo-red: #f7768e;
+    --color-tokyo-dark: #16161e;
+    --color-tokyo-comment: #565f89;
+
+    --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+    :root {
+        color-scheme: dark;
+    }
+
+    :root[data-theme='light'] {
+        color-scheme: light;
+        --color-tokyo-bg: #e1e2e7;
+        --color-tokyo-fg: #3760bf;
+        --color-tokyo-blue: #2e7de9;
+        --color-tokyo-cyan: #007197;
+        --color-tokyo-purple: #9854cb;
+        --color-tokyo-green: #587539;
+        --color-tokyo-yellow: #8c6c3e;
+        --color-tokyo-red: #f52a65;
+        --color-tokyo-dark: #d5d6db;
+        /* Lighter background for cards in light mode */
+        --color-tokyo-comment: #9699a3;
+    }
+
+    html {
+        background-color: var(--color-tokyo-bg);
+        color: var(--color-tokyo-fg);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body {
+        @apply font-sans antialiased min-h-screen flex flex-col;
+    }
+}
