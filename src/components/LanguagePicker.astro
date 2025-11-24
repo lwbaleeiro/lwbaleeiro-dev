@@ -9,7 +9,7 @@ const currentLang = pathname.replace(baseUrl, '').startsWith('/en') ? 'en' : 'pt
 <div class="flex items-center space-x-2">
   {Object.entries(languages).map(([lang, label]) => {
     const isCurrent = lang === currentLang;
-    const href = lang === 'pt-br' ? baseUrl : `${baseUrl}${lang}`;
+    const href = lang === 'pt-br' ? baseUrl : `${baseUrl}/${lang}`;
     
     return (
       <a
