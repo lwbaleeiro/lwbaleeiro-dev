@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://lwbaleeiro.github.io',
-  base: '/lwbaleeiro-dev',
+  base: '/',
   i18n: {
     defaultLocale: 'pt-br',
     locales: ['pt-br', 'en'],
