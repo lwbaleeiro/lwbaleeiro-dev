@@ -2,13 +2,14 @@
 import { languages } from '../i18n/ui';
 
 const { pathname } = Astro.url;
-const currentLang = pathname.startsWith('/en') ? 'en' : 'pt-br';
+const baseUrl = import.meta.env.BASE_URL;
+const currentLang = pathname.replace(baseUrl, '').startsWith('/en') ? 'en' : 'pt-br';
 ---
 
 <div class="flex items-center space-x-2">
   {Object.entries(languages).map(([lang, label]) => {
     const isCurrent = lang === currentLang;
-    const href = lang === 'pt-br' ? '/' : `/${lang}`;
+    const href = lang === 'pt-br' ? baseUrl : `${baseUrl}${lang}`;
     
     return (
       <a
