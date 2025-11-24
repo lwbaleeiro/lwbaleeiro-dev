@@ -1,43 +1,49 @@
-# Astro Starter Kit: Minimal
+# 👋 Hello, World!
 
-```sh
-npm create astro@latest -- --template minimal
+Bem-vindo ao código-fonte do meu cantinho digital! 
+
+Este é o repositório do meu site pessoal - um espaço onde compartilho um pouco sobre mim, meus projetos e (em breve) algumas reflexões no blog.
+
+## ✨ Sobre o site
+
+Um portfólio minimalista com tema Tokyo Night, porque código bonito merece uma apresentação bonita também. 
+
+**Features:**
+- 🌓 Dark/Light mode (porque nem todo mundo gosta de queimar a retina)
+- 🌍 Bilíngue (PT/EN) - afinal, código é universal
+- 📱 Responsivo - funciona do celular ao ultrawide
+- 📊 Analytics integrado (sim, eu sei quando você visita 👀)
+
+## 🛠️ Tecnologias
+
+Construído com:
+- **Astro** - porque performance importa
+- **TypeScript** - para manter a sanidade
+- **Tailwind CSS** - estilização sem dor de cabeça
+- **Google Analytics 4** - para saber se alguém realmente visita isso aqui
+
+## 🚀 Rodando localmente
+
+```bash
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📫 Contato
 
-## 🚀 Project Structure
+Se você chegou até aqui, provavelmente está interessado em conversar!
 
-Inside of your Astro project, you'll see the following folders and files:
+- 💼 [LinkedIn](https://www.linkedin.com/in/lwbaleeiro/)
+- 💻 [GitHub](https://github.com/lwbaleeiro)
+- ✍️ [Medium](https://medium.com/@dev.baleeiro)
+- 📧 dev.baleeiro@gmail.com
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+*Feito com ☕ e algumas horas de procrastinação produtiva*

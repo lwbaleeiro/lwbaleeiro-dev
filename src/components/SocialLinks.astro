@@ -26,6 +26,8 @@ const socialLinks = [
       rel="noopener noreferrer" 
       class="text-tokyo-comment hover:text-tokyo-blue transition-colors duration-300 p-2 rounded-full hover:bg-tokyo-blue/10"
       aria-label={link.name}
+      data-social={link.name}
+      onclick={`gtag('event', 'click', { 'event_category': 'social_link', 'event_label': '${link.name}', 'value': '${link.url}' });`}
     >
       <svg class="w-6 h-6 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d={link.icon} />
