@@ -1,7 +1,5 @@
 # 👋 Hello, World!
 
-Bem-vindo ao código-fonte do meu cantinho digital! 
-
 Este é o repositório do meu site pessoal - um espaço onde compartilho um pouco sobre mim, meus projetos e (em breve) algumas reflexões no blog.
 
 ## ✨ Sobre o site
